@@ -4,7 +4,7 @@ Este directorio contiene el código fuente del proyecto de MLOps. Aquí encontra
 
 ## Estructura del directorio 
 
-- `data/`: Scripts para la carga y preprocesamiento de datos.
+- `data/`: Scripts para la carga y preprocesamiento de datos del datalake.
 - `models/`: Definición y entrenamiento de modelos.
 - `evaluation/`: Evaluación y métricas de rendimiento de los modelos.
 - `deployment/`: Scripts para el despliegue de los modelos en producción.
