@@ -1,0 +1,18 @@
+[project]
+name = "ml-project-plantilla"
+version = "0.1.0"
+description = "Proyecto base para la creación de repositorios de ML y automatización de inferencias"
+authors = [
+    {name = "Marco Estrada",email = "mestrada@bancoguayaquil.com"}
+]
+license = {text = "Propietary"}
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "zope (>=5.12,<6.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
