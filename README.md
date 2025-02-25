@@ -9,7 +9,7 @@ poetry config virtualenvs.in-project true
 poetry install
 
 # Acceder al entorno virtual creado en PowerShell
- Invoke-Expression (poetry env activate)
+Invoke-Expression (poetry env activate)
 
 # Ejecutar el proyecto
 poetry run python main.py
