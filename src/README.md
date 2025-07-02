@@ -1,10 +1,10 @@
 # Estructura Interna del Código
 
-Descripción de la organización y convenciones dentro del paquete fuente (`src/mi_proyecto`).
+Descripción de la organización y convenciones dentro del paquete fuente (`src/ml_project_plantilla`).
 
 ---
 
-## 📁 Carpeta base: `src/mi_proyecto/`
+## 📁 Carpeta base: `src/ml_project_plantilla/`
 
 Contiene los módulos y paquetes que implementan la lógica de tu proyecto.
 

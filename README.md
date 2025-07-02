@@ -38,7 +38,7 @@ Plantilla escalable para iniciar proyectos de Machine Learning con estructura mo
      ```
 3. **Renombra el paquete fuente**
    ```bash
-   mv src/ml_project_template src/mi_proyecto
+   mv src/ml_project_plantilla src/mi_proyecto
    ```
 
 4. **Configura tu repositorio Git**
@@ -137,7 +137,8 @@ Recuerda que el entorno virtual debe estar activado o usar `poetry run` para que
 
 Además solo podrás llamar a los modulos y submódulos que esten dentro de `src`, estos los podrás llamar en cualquier parte  e incluso dentro de los mismos submodulos de `src`.
 
-
+---
+## NOTA IMPORTANTE: Una vez leído los README, recuerda eliminarlos y adapatarlos a tu proyecto especifico
 
 ---
 
@@ -149,5 +150,4 @@ Además solo podrás llamar a los modulos y submódulos que esten dentro de `src
 
 ---
 
-##
 
