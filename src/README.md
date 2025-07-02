@@ -4,12 +4,17 @@ Este directorio contiene el código fuente del proyecto de MLOps. Aquí encontra
 
 ## Estructura del directorio 
 
-- `data/`: Scripts para la carga y preprocesamiento de datos del datalake.
-- `interfaces/`: 
+- `data/`: Scripts para la carga y preprocesamiento de datos de la base da datos, así como archivos .parquet  de los datos empleados para el modelamiento.
+-`data_engineering/`: ----- 
+- `interfaces/`: Aquí colocamos todas las **definiciones de contratos** (interfaces) que usan nuestras clases.  
+Cada archivo debe:
+  1. Llevar el mismo nombre que la interfaz que contiene p. ej. `IFeatureSelector.py`, `IModelSelector.py`, 
+  2. Incluir únicamente la firma de métodos y constantes.
+  3. Acompañarse de un breve comentario que describa la responsabilidad de la interface.  
+  4. No contener lógica ni dependencias de librerías concretas para mantenerlas puras y reutilizables.
 - `models/`: Definición y entrenamiento de modelos.
 - `evaluation/`: Evaluación y métricas de rendimiento de los modelos.
 - `deployment/`: Scripts para el despliegue de los modelos en producción.
-- `deployment/`: Directorio donde se encuentran los pipelines.
 - `utils/`: Funciones utilitarias y herramientas auxiliares.
 
 
