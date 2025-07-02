@@ -135,6 +135,8 @@ poetry run python path/to/tu_script.py
 
 Recuerda que el entorno virtual debe estar activado o usar `poetry run` para que Python encuentre tu paquete correctamente.
 
+Además solo podrás llamar a los modulos y submódulos que esten dentro de `src`, estos los podrás llamar en cualquier parte  e incluso dentro de los mismos submodulos de `src`.
+
 
 
 ---
