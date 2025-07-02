@@ -29,7 +29,7 @@ Plantilla escalable para iniciar proyectos de Machine Learning con estructura mo
    cd nombre_de_mi_proyecto
    ```
 2. **Ajusta metadatos en**
-   - Abre `pyproject.toml` y edita bajo `[tool.poetry]`:
+   - Abre `pyproject.toml` y edita bajo `[project]`:
      ```toml
      name = "nombre-de-mi-proyecto"
      version = "0.1.0"
@@ -40,12 +40,7 @@ Plantilla escalable para iniciar proyectos de Machine Learning con estructura mo
    ```bash
    mv src/ml_project_template src/mi_proyecto
    ```
-   - Luego, actualiza la sección `packages` en `pyproject.toml`:
-     ```toml
-     packages = [
-       {  from = ".", include = "src" }
-     ]
-     ```
+
 4. **Configura tu repositorio Git**
    ```bash
    git remote remove origin
@@ -109,6 +104,38 @@ nombre_de_mi_proyecto/
 ├── README.md         # Este archivo
 └── .gitignore
 ```
+
+---
+
+## 📦 Uso e importación de módulos
+
+Una vez instalado el entorno y agregadas las dependencias, puedes importar y usar los módulos de tu paquete en tus scripts o notebooks de la siguiente manera:
+
+Supón que tu paquete principal se llama `mi_proyecto` y tienes un módulo llamado `utils.py` dentro de `src/mi_proyecto/`:
+
+```python
+from src.mi_proyecto import utils
+
+# Usar una función del módulo utils
+resultado = utils.mi_funcion(param1, param2)
+print(resultado)
+```
+
+Si tienes submódulos o subcarpetas, puedes importarlos así:
+
+```python
+from src.mi_proyecto.submodulo import otra_funcion
+```
+
+Para ejecutar un script que use tu paquete desde la raíz del proyecto:
+
+```bash
+poetry run python path/to/tu_script.py
+```
+
+Recuerda que el entorno virtual debe estar activado o usar `poetry run` para que Python encuentre tu paquete correctamente.
+
+
 
 ---
 
