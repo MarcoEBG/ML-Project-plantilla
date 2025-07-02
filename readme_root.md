@@ -28,7 +28,7 @@ Plantilla escalable para iniciar proyectos de Machine Learning con estructura mo
    git clone https://github.com/tu-org/ml_project_template.git nombre_de_mi_proyecto
    cd nombre_de_mi_proyecto
    ```
-2. \*\*Ajusta metadatos en \*\*``
+2. **Ajusta metadatos en**
    - Abre `pyproject.toml` y edita bajo `[tool.poetry]`:
      ```toml
      name = "nombre-de-mi-proyecto"
