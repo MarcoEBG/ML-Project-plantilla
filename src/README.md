@@ -1,6 +1,6 @@
 # Estructura Interna del Código
 
-Este README describe la organización y convenciones dentro del paquete fuente (`src/mi_proyecto`).
+Descripción de la organización y convenciones dentro del paquete fuente (`src/mi_proyecto`).
 
 ---
 
