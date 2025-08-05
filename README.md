@@ -45,6 +45,8 @@ Plantilla escalable para iniciar proyectos de Machine Learning con estructura mo
 
 ## ⚙️ Instalación y entorno
 
+### Opción A: Entorno virtual manejado por Poetry
+
 1. **Inicializa Poetry en tu proyecto**
 
    Desde la raíz del repositorio ejecuta:
@@ -109,6 +111,42 @@ Plantilla escalable para iniciar proyectos de Machine Learning con estructura mo
    ```bash
    poetry run python path/to/tu_script.py
    ```
+
+### Opción B: Usar un entorno existente de Anaconda
+
+Si trabajas dentro de un entorno creado con **Anaconda** o **Miniconda**, puedes usar ese mismo entorno como base y dejar que Poetry solo gestione las dependencias:
+
+1. **Crea o activa tu entorno de Anaconda**
+
+   ```bash
+   conda create -n mi_entorno python=3.10
+   conda activate mi_entorno
+   ```
+
+2. **Instala Poetry dentro de ese entorno**
+
+   ```bash
+   conda install -c conda-forge poetry   # o pip install poetry
+   ```
+
+3. **Indica a Poetry que use el entorno actual**
+
+   Esto evita que se cree un `.venv` adicional.
+
+   ```bash
+   poetry config virtualenvs.create false
+   ```
+
+4. **Inicializa el proyecto y agrega dependencias** (procede igual que en la opción anterior)
+
+   Dentro del entorno activo:
+
+   ```bash
+   poetry init
+   poetry install
+   ```
+
+De esta forma, el entorno de Anaconda funciona como tu entorno de ejecución y Poetry se encarga de manejar las dependencias dentro de él.
 
 ---
 
