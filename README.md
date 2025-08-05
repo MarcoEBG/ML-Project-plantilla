@@ -52,40 +52,69 @@ Plantilla escalable para iniciar proyectos de Machine Learning con estructura mo
 
 ## ⚙️ Instalación y entorno
 
-1. **Crear el .env en el directorio raiz**
+1. **Inicializa Poetry en tu proyecto**
+
+   Desde la raíz del repositorio ejecuta:
+
+   ```bash
+   poetry init
+   ```
+
+   El asistente te guiará para crear el `pyproject.toml`.
+   Responde paso a paso:
+
+   - **Package name**: `ml-project-plantilla` (o el nombre de tu proyecto).
+   - **Version**: `0.1.0` es la predeterminada.
+   - **Description**: breve descripción del proyecto.
+   - **Author**: tu nombre y correo.
+   - **License**: licencia que usarás (por ejemplo, `MIT`).
+   - **Compatible Python versions**: `>=3.10,<3.13`.
+   - Cuando pregunte por dependencias, puedes responder `no` y agregarlas después.
+
+   Al finalizar se generará el archivo `pyproject.toml`.
+
+2. **Crea el entorno virtual dentro del proyecto**
 
    ```bash
    poetry config virtualenvs.in-project true
    ```
 
-2. **Instala dependencias**
+3. **Agrega dependencias de producción**
+
+   ```bash
+   poetry add zope
+   ```
+
+4. **Agrega dependencias de desarrollo**
+
+   ```bash
+   poetry add --dev pytest pytest-cov pre-commit flake8 black isort mypy jupyterlab ipykernel
+   ```
+
+5. **Instala el entorno**
 
    ```bash
    poetry install
    ```
 
-3. **Acceder al entorno virtual creado en PowerShell**
+6. **Activa el entorno virtual**
+
+   En PowerShell:
 
    ```bash
    Invoke-Expression (poetry env activate)
    ```
 
-4. **Corre un script**
+   En otros shells:
+
+   ```bash
+   poetry shell
+   ```
+
+7. **Ejecuta un script**
 
    ```bash
    poetry run python path/to/tu_script.py
-   ```
-
-5. **Agrega dependencias de producción**
-
-   ```bash
-   poetry add <nombre_paquete>
-   ```
-
-6. **Agrega dependencias de desarrollo**
-
-   ```bash
-   poetry add --dev <nombre_paquete_dev>
    ```
 
 ---
